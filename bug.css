@@ -1,0 +1,9 @@
+The following CSS code snippet attempts to style elements based on their position within a container using the `:nth-child` pseudo-class.  However, it only targets even-numbered children.
+
+```css
+.container div:nth-child(even) {
+  background-color: lightblue;
+}
+```
+
+This might lead to unexpected styling issues if you intend to style specific children (e.g., every third child) or a more complex selection.
