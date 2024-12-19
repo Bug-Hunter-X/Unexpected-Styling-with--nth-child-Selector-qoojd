@@ -1,0 +1,16 @@
+The issue arises from using `even` in `:nth-child(even)`.  To target specific children, you need to use a more appropriate formula.
+
+For example:
+
+* To target every third child: `:nth-child(3n)`
+* To target the first and third child: `:nth-child(2n+1)`
+
+Here's a corrected example targeting every third child:
+
+```css
+.container div:nth-child(3n) {
+  background-color: lightblue;
+}
+```
+
+Adjust the formula within the parentheses to match your specific styling requirements.
